@@ -6,7 +6,12 @@ public abstract class Account implements IAccount {
     protected int agencyNumber;
     protected int accountNumber;
     protected double balance;
+    protected Client client;
 
+
+    public Account(Client client) {
+        this.client = client;
+    }
 
     @Override
     public void withdraw(double value) {
@@ -37,6 +42,7 @@ public abstract class Account implements IAccount {
     }
 
     protected void printAccountInformation() {
+        System.out.printf("Nome do Cliente: %s%n", client.getName());
         System.out.printf("Numero da Agência: %d%n", agencyNumber);
         System.out.printf("Numero da Conta: %d%n", accountNumber);
         System.out.printf("Saldo: %.2f%n", balance);
