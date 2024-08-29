@@ -13,6 +13,9 @@ public abstract class Account implements IAccount {
         this.client = client;
     }
 
+    public Account() {
+    }
+
     @Override
     public void withdraw(double value) {
         this.balance -= value;
@@ -46,5 +49,6 @@ public abstract class Account implements IAccount {
         System.out.printf("Numero da Agência: %d%n", agencyNumber);
         System.out.printf("Numero da Conta: %d%n", accountNumber);
         System.out.printf("Saldo: %.2f%n", balance);
+        System.out.println("======================================================");
     }
 }

@@ -12,7 +12,7 @@ public class CurrentAccount extends Account {
 
     @Override
     public void printStatement() {
-        System.out.println("========================");
+        System.out.println("======================================================");
         System.out.println("Informações da Conta Corrente:");
         printAccountInformation();
     }

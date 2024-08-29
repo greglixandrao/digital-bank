@@ -7,4 +7,7 @@ import lombok.Setter;
 @Setter
 public class Client {
     private String name;
+
+    public Client() {
+    }
 }
